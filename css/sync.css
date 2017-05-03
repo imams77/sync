@@ -1,0 +1,63 @@
+.hero__date-time span{
+	display: block;
+}
+#hero__sync-image{
+	width: 35%;
+}
+.hero__place{
+	font-size: 23px
+}
+.hero__year{
+	font-size: 23px;
+}
+.hero__description{
+	font-weight: 500;
+	text-transform: none;
+	width: 70%;
+	margin-bottom: 50px;
+
+}
+#hero__btn-registration{
+	margin-right: 5px;
+}
+#hero__btn-trailer{
+	margin-left: 5px;
+}
+header{
+	position: relative;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header:after{
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  left: 25%;
+  background-color: white;
+  content: '';
+  bottom: 0;
+}
+#hero__top-word{
+	font-size: 18px;
+}
+/* PEMBICARA */
+#pembicara__first-row{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.pembicara__avatar span{
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	overflow: hidden;
+	display: inline-block;
+}
+/* NAV */
+.desktop-nav:after{
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: white;
+	content: '';
+	left: 0;
+}
