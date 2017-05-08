@@ -20,10 +20,12 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link href="vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/sync.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -55,19 +57,19 @@
                         <a class="page-scroll desktop-nav" href="#page-top" >Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll desktop-nav"" href="#services">Speakers</a>
+                        <a class="page-scroll desktop-nav"" href="#speakers">Speakers</a>
                     </li>
                     <li>
-                        <a class="page-scroll desktop-nav"" href="#portfolio">Rundown</a>
+                        <a class="page-scroll desktop-nav"" href="#rundown">Rundown</a>
                     </li>
                     <li>
-                        <a class="page-scroll desktop-nav"" href="#about">Registration</a>
+                        <a class="page-scroll desktop-nav"" href="#registration">Registration</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Confirm Payment</a>
+                        <a class="page-scroll" href="#payment">Confirm Payment</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Hotel Recommendation</a>
+                        <a class="page-scroll" href="#hotel">Hotel Recommendation</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact Us</a>
@@ -107,13 +109,14 @@
 
                         Jadi, apakah kamu salah satu anak muda yang siap untuk masuk dalam gerakan ini ? Kami tunggu partisipasimu dalam SYNC Youth Conference 2017 !
                     </p>
-                <a href="#services" id="hero__btn-registration" class="page-scroll btn btn-xl">REGISTRATION</a><a href="#services" id="hero__btn-trailer" class="page-scroll btn btn-xl">WATCH TRAILER</a>
+                <a href="#registration" id="hero__btn-registration" class="page-scroll btn btn-xl">REGISTRATION</a>
+                <a href="https://www.youtube.com/watch?v=c1mPogvr64I" id="hero__btn-trailer" class="popup-youtube btn btn-xl">WATCH TRAILER</a>
             </div>
         </div>
     </header>
 
     <!-- Pembicara -->
-    <section id="pembicara">
+    <section id="speakers">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -121,580 +124,517 @@
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
-            <div class="row text-center" id="pembicara__first-row">
+            <div class="row text-center" id="speakers__first-row">
                 <div class="col-md-4">
-                    <div class="pembicara__avatar">
+                    <div class="speaker__avatar">
                         <span>
                             <img src="http://placehold.it/160x160" alt="">
                         </span>
                     </div>
-                    <h4 class="pembicara__name">E-Commerce</h4>
+                    <h4 class="speaker__name">ANDREAS <br> NAWAWI</h4>
                     <!-- <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
                 </div>
                 <div class="col-md-4">
-                    <div class="pembicara__avatar">
+                    <div class="speaker__avatar">
                         <span>
                             <img src="http://placehold.it/160x160" alt="">
                         </span>
                     </div>
-                    <h4 class="pembicara__name">Responsive Design</h4>
+                    <h4 class="speaker__name">BAMBANG H.<br> WIDJAJA</h4>
                 </div>
                 <div class="col-md-4">
-                    <div class="pembicara__avatar">
+                    <div class="speaker__avatar">
                         <span>
                             <img src="http://placehold.it/160x160" alt="">
                         </span>
                     </div>
-                    <h4 class="pembicara__name">Web Security</h4>
+                    <h4 class="speaker__name">YUSAK <br> TOTO</h4>
                 </div>
             </div>
-             <div class="row text-center" id="pembicara__second-row">
-            <div class="col-md-4 col-md-offset-2">
-                    <div class="pembicara__avatar">
+            <div class="row text-center" id="speakers__second-row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="speaker__avatar">
                         <span>
                             <img src="http://placehold.it/160x160" alt="">
                         </span>
                     </div>
-                    <h4 class="pembicara__name">E-Commerce</h4>
+                    <h4 class="speaker__name">JEFRI <br> KADANG</h4>
                 </div>
                 <div class="col-md-4">
-                    <div class="pembicara__avatar">
+                    <div class="speaker__avatar">
                         <span>
                             <img src="http://placehold.it/160x160" alt="">
                         </span>
                     </div>
-                    <h4 class="pembicara__name">Responsive Design</h4>
+                    <h4 class="speaker__name">TETTY <br> RUTH</h4>
                 </div>
+            </div>
         </div>
-        </div>
+        <div class="row text-center" id="featuring">
+            <h3 class="section-heading">Featuring</h3>
+            <div class="container">
+                <div class="owl-carousel">
+                    <div class="item"><img src="img/featuring/featuring-09.png" alt=""></div>
+                    <div class="item"><img src="img/featuring/featuring-10.png" alt=""></div>
+                    <div class="item"><img src="http://placehold.it/220x50" alt=""></div>
+                </div>
+                <span class="info">Dan masih ada kejutan pembicara lainnya!</span>
+            </div>
 
+        </div>
     </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <div class="separate-line container" data-width="50%"></div>
+    <!-- RUNDOWN -->
+    <section id="rundown">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Rundown</h2>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                      <li role="presentation" class="active"><a href="#d1" data-toggle="tab">
+                        <h4>DAY ONE</h4>
+                        <span>14<sup>TH</sup> JUNE 2017</span>
+                      </a></li>
+                      <li role="presentation"><a href="#d2" data-toggle="tab">
+                        <h4>DAY TWO</h4>
+                        <span>15<sup>TH</sup> JUNE 2017</span>
+                      </a></li>
+                      <li role="presentation"><a href="#d3" data-toggle="tab">
+                        <h4>DAY THREE</h4>
+                        <span>16<sup>TH</sup> JUNE 2017</span>
+                      </a></li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="d1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">14.00 - 16.00</div>
+                                    <div class="col-sm-9">REGISTRATION</div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
+                                <div class="row">
+                                    <div class="col-sm-3">16.00</div>
+                                    <div class="col-sm-9">SYNC INTRO</div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">SESSION 1</div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
                             </div>
                         </div>
-                    </form>
+                        <div class="tab-pane" id="d2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">14.00 - 16.00</div>
+                                    <div class="col-sm-9">BIBLE STUDY</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.00</div>
+                                    <div class="col-sm-9">SESSION II</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">LUNCH</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">19.30 - 20.30</div>
+                                    <div class="col-sm-9">SESSION III</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">WORKSHOP 1</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">SNACK</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">WORKSHOP 2</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">SESSION IV</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">DINNER</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="d3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3">14.00 - 16.00</div>
+                                    <div class="col-sm-9">BIBLE STUDY</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.00</div>
+                                    <div class="col-sm-9">SESSION V</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">LUNCH</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">19.30 - 20.30</div>
+                                    <div class="col-sm-9">SESSION VI</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">WORKSHOP 3</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">SNACK</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">WORKSHOP 4</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">DINNER</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">16.30 - 19.30</div>
+                                    <div class="col-sm-9">SESSION VII</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="workshop-topics__btn" onclick="showTopics()">LIST OF WORKSHOP TOPICS</span>
+                    <div id="workshop-topics__list" class="tab-pane">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">BUSINESS</div>
+                                    <div class="col-sm-6">MEDIA</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">YOUTH MINISTRY</div>
+                                    <div class="col-sm-6">MUSIC SHARPING FAITH</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">SEXUAL IDENTITY</div>
+                                    <div class="col-sm-6">PUT YOUR PASSION IN THE RIGHT PLACE!</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">POLITICS</div>
+                                </div>
+                            </div>
+                    </div>
+                    <span>dan kita masih punya workshop lain yang ga kalah menarik!</span>
                 </div>
             </div>
         </div>
     </section>
+    <div class="separate-line container" data-width="50%"></div>
+    <!-- REGISTRATION FORM -->
+    <section id="registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Form Registrasi</h2>
+                </div>
+            </div>
+            <div class="row">
+                <form action="" class="sync-form" id="registration-form" method="post">
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NAMA LENGKAP *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="name" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">GENDER *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <div class="radio sync__radio col-sm-2 col-xs-6">
+                                <label class="sync__label"><input type="radio" value="male" name="gender">Pria</label>
+                            </div>
+                            <div class="radio sync__radio col-sm-2 col-xs-6">
+                                <label class="sync__label"><input type="radio" value="female" name="gender">Wanita</label>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">TANGGAL LAHIR *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="dob" class="form-control datepicker">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">KOTA *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="city" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">GEREJA / ORGANISASI *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="organization" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">SATELIT *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <select name="branch" class="form-control">
+                                <option value="1">Pasko 1</option>
+                                <option value="2">Pasko 2</option>
+                                <option value="3">Pasko 3</option>
+                                <option value="4">Pasko 4</option>
+                                <option value="5">BTC 1</option>
+                                <option value="6">Mahasiswa</option>
+                                <option value="7">Lainnya</option>
+                            </select>
+                            <span class="sync__info">*Bagi peserta di luar MDC Bandung, silakan pilih lainnya</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">JABATAN *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="position" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">STATUS *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <div class="radio sync__radio col-sm-3 col-xs-4">
+                                <label class="sync__label"><input type="radio" value="smp" name="status">Pelajar SMP</label>
+                            </div>
+                            <div class="radio sync__radio col-sm-3 col-xs-4">
+                                <label class="sync__label"><input type="radio" value="sma" name="status">Pelajar SMA</label>
+                            </div>
+                            <div class="radio sync__radio col-sm-3 col-xs-4">
+                                <label class="sync__label"><input type="radio" value="mahasiswa" name="status">Mahasiswa/i</label>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">KELAS *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="class" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NAMA SEKOLAH *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <select name="school" class="form-control">
+                                <option value="1">BPK Penabur</option>
+                                <option value="2">Bina Bakti</option>
+                                <option value="3">Bintang Mulia</option>
+                                <option value="7">Lainnya</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="separate-line container" data-width="100%"></div>
+                    <h3 class="section-heading sync__registration-contact">CONTACT</h3>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NO HP *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="phone" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">EMAIL *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="email" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn sync__btn" value="SEND" name="submit">
+                    </div>
+                </form>
+                <div id="registration-form--footer">
+                    <div class="subtitle" >
+                        Pemebayaran  dapat dilakukan ke rekening
+                    </div>
+                    <div class="title">
+                        <strong>BCA  0087851111</strong>  a.n. <strong>Michelle Tertia</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separate-line container" data-width="50%"></div>
+    <!-- PAYMENT FORM -->
+    <section id="payment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Konfirmasi Pembayaran</h2>
+                </div>
+            </div>
+            <div class="row">
+                <form action="" class="sync-form" id="payment-form" method="post">
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NO. PESERTA *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="registration-number" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NAMA *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="name" class="form-control">
+                        </span>
+                    </div>
+                     <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NO REKENING *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="account-number" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">TANGGAL TRANSFER *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="transfer-date" class="form-control datepicker">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NOMINAL *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <input type="text" name="nominal" class="form-control">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-12 sync__label">
+                            <label for="name">NOTES</label>
+                        </span>
+                        <span class="col-sm-12">
+                            <textarea name="notes" class="form-control" rows="7">
+                            </textarea>
+                            <span class="sync__info">*Jika membayar untuk lebih dari 1 peserta, mohon tuliskan nama peserta di kolom ini</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn sync__btn" value="SEND" name="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="separate-line container" data-width="50%"></div>
+    <!-- HOTEL RECOMMENDATION -->
+    <section id="hotel">
+        <div class="container">
+            <div class="row">
+                <div class="container text-center">
+                    <h2 style="font-size: 40px; margin-top: 0">Rekomendasi Hotel</h2>
+                    <p>Dapatkan harga khusus untuk peserta SYNC YOUTH CONFERENCE di hotel-hotel ini!</p>
+                </div>
+                <div class="row hotel-recommendation">
+                    <div class="col-sm-3 col-xs-6 hotel__container">
+                        <div class="hotel__inner">
+                            <div class="hotel__logo"><img src="http://placehold.it/200x200" alt="" style="border-radius: 100%;"></div>
+                            <div class="hotel__name text-center">
+                                <h4>HOTEL A</h4>
+                                <p>
+                                    Jl. Jendral Soedirman Blok III no xxx RT 005 RW 22
+                                </p>
+                                <span>01213123</span>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-sm-3 col-xs-6 hotel__container">
+                        <div class="hotel__inner">
+                            <div class="hotel__logo"><img src="http://placehold.it/200x200" alt="" style="border-radius: 100%;"></div>
+                            <div class="hotel__name text-center">
+                                <h4>HOTEL B</h4>
+                                <p>
+                                    Jl. Jendral Soedirman Blok III no xxx RT 005 RW 22
+                                </p>
+                                <span>01213123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 hotel__container">
+                        <div class="hotel__inner">
+                            <div class="hotel__logo"><img src="http://placehold.it/200x200" alt="" style="border-radius: 100%;"></div>
+                            <div class="hotel__name text-center">
+                                <h4>HOTEL C</h4>
+                                <p>
+                                    Jl. Jendral Soedirman Blok III no xxx RT 005 RW 22
+                                </p>
+                                <span>01213123</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 hotel__container">
+                        <div class="hotel__inner">
+                            <div class="hotel__logo"><img src="http://placehold.it/200x200" alt="" style="border-radius: 100%;"></div>
+                            <div class="hotel__name text-center">
+                                <h4>HOTEL D</h4>
+                                <p>
+                                    Jl. Jendral Soedirman Blok III no xxx RT 005 RW 22
+                                </p>
+                                <span>01213123</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER-->
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                <div class="container text-center">
+                    <h2>Contact Us</h2>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
+                <div class="container footer__cta">
+                    <div class="row">
+                        <span class="cta__title">call us at</span><span class="cta__content">08211-6884-8802</span>
+                    </div>
+                    <div class="row">
+                        <span class="cta__title">email us</span><span class="cta__content">sync.conference2017@gmail.com</span>
+                    </div>
+
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
+                <div class="container" id="footer__socmed">
+                        <span><i class="fa fa-3x fa-instagram"></i> @grabssync</span>
+                        <span><i class="fa fa-3x fa-instagram"></i> @mahasiswa_gkpb</span>
                 </div>
+
             </div>
         </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                                <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -704,13 +644,18 @@
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
+    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="vendor/owl-carousel/js/owl.autoplay.js"></script>
+    <script src="vendor/owl-carousel/js/owl.navigation.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
-
+    <!-- popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 

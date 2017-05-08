@@ -166,16 +166,17 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: white;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: white;
+  color: black;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -186,19 +187,19 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #fed136;
+  color: white;
   outline: none;
 }
-.navbar-custom .navbar-nav > .active > a {
+/* .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
   background-color: #fed136;
-}
-.navbar-custom .navbar-nav > .active > a:hover,
+} */
+/* .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
   background-color: #fec503;
-}
+} */
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -300,14 +301,10 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 100px 0;
+    padding: 60px 0;
   }
 }
-.pembicara__name {
-  margin: 15px 0;
-  text-transform: none;
-  color: white;
-}
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;

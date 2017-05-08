@@ -13,4 +13,7 @@
 		display: flex;
 		justify-content: space-around;
 	}
+	.sync-form  > .row > .sync__label label{
+		margin-bottom: 0;
+	}
 }
