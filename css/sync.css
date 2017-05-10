@@ -2,6 +2,10 @@ body{
 	color: white;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.btn-pink{
+	background-color: #DF99BD;
+	color: black
+}
 .hero__date-time span{
 	display: block;
 }
@@ -318,6 +322,9 @@ header:after{
 	display: none;
 }
 /* modal */
+.modal-footer{
+	text-align: center;
+}
 .sync-modal .modal-dialog{
 	color: black;
 	width: 50%
@@ -367,6 +374,10 @@ header:after{
 	padding: 30px;
 	max-width: 100%;
 }
+#registration__modal .modal-body label{
+	color: black;
+}
+
 .modal__avatar--frame span{
 	background-color: white;
 	width: 165px;

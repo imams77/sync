@@ -81,29 +81,6 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- modal -->
-    <div id="speakers__nawawi" class="modal fade sync-modal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <!-- <h4 class="modal-title">Modal Header</h4> -->
-                </div>
-                <div class="modal-body container">
-                    <div class="modal__avatar--frame col-sm-3">
-                        <span></span>
-                    </div>
-                    <div class="col-sm-9">
-                        <h4>BAMBANG H. WIDJAJA</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio unde eveniet nesciunt asperiores quisquam, ullam quibusdam distinctio, quis, cum deserunt dolore? Voluptatibus assumenda consectetur magnam quod, eligendi excepturi voluptatum quibusdam.</p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
     <div id="speakers__an" class="modal fade sync-modal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -215,6 +192,200 @@
                 </div>
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- registration modal -->
+    <div id="registration__modal" class="modal fade sync-modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Registration Summary</h4>
+                    <p>Harap diperiksa kembali apabila ada data yang salah</p>
+                </div>
+                <div class="modal-body container">
+                    <!-- <form action="" class="sync-form" id="registration-form" method="post"> -->
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NAMA LENGKAP</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>MICHELLE TERTIA</span>
+                        </span>
+
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">GENDER</label>
+                        </span>
+                        <span class="col-sm-9">
+                           <span>FEMALE</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">TANGGAL LAHIR *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>11 MEI 1992</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">KOTA</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>BANDUNG</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">GEREJA / ORGANISASI</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>GKPB FAJAR</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">SATELIT</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>MAHASISWA</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">JABATAN</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>PELAYAN GEREJA</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">STATUS</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>PELAJAR SMP</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">KELAS *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>9</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NAMA SEKOLAH</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>SMAK 1 PENABUR</span>
+                        </span>
+                    </div>
+                    <div class="separate-line container" data-width="100%"></div>
+                    <h3 class="section-heading sync__registration-contact">CONTACT</h3>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NO HP *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>081123123123</span>
+                        </span>
+
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">EMAIL</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>johndoe@gmail.com</span>
+                        </span>
+                    </div>
+                    <div class="row submit-btn__container">
+
+                        <!-- <input type="submit" class="btn sync__btn" value="SEND" name="submit"> -->
+                    </div>
+                <!-- </form> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>
+                    <span class="btn btn-pink">Kirim</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- payment modal -->
+    <div id="payment__modal" class="modal fade sync-modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Registration Summary</h4>
+                    <p>Harap diperiksa kembali apabila ada data yang salah</p>
+                </div>
+                <div class="modal-body container">
+                    <!-- <form action="" class="sync-form" id="payment-form" method="post"> -->
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NO. PESERTA *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>123123123</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NAMA *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>MICHELLE TERTIS</span>
+                        </span>
+                    </div>
+                     <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NO REKENING *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>002349791</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">TANGGAL TRANSFER *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>11/05/2017</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NOMINAL *</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>2000000</span>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span class="col-sm-3 sync__label">
+                            <label for="name">NOTES</label>
+                        </span>
+                        <span class="col-sm-9">
+                            <span>Buat berdua</span>
+                        </span>
+                    </div>
+                    <!-- </form> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>
+                    <span class="btn btn-pink">Kirim</span>
                 </div>
             </div>
         </div>
@@ -626,7 +797,8 @@
                         </span>
                     </div>
                     <div class="row submit-btn__container">
-                        <input type="submit" class="btn sync__btn" value="SEND" name="submit">
+                        <span class="btn sync__btn" data-target="#registration__modal" data-toggle="modal">SEND</span>
+                        <!-- <input type="submit" class="btn sync__btn" value="SEND" name="submit"> -->
                     </div>
                 </form>
                 <div id="registration-form--footer">
@@ -702,7 +874,7 @@
                         </span>
                     </div>
                     <div class="row submit-btn__container">
-                        <input type="submit" class="btn sync__btn" value="SEND" name="submit">
+                        <span class="btn sync__btn" data-target="#payment__modal" data-toggle="modal">SEND</span>
                     </div>
                 </form>
             </div>
