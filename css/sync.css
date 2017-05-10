@@ -44,6 +44,7 @@ header:after{
 	font-size: 18px;
 }
 /* speakers */
+
 #featuring .info{
 	margin-top: 20px;
 	width: 100%;
@@ -57,15 +58,48 @@ header:after{
 	margin-bottom:  60px;
 }
 .speaker__name {
-  margin: 15px 0;
-  text-transform: none;
-  color: white;
+  	z-index: 1;
+  	transition: all ease-in-out .2s;
+	position: absolute;
+	left: 60px;
+	bottom: 48px;
+	font-size: 22px;
+}
+.speakers__container{
+	display: inline-flex;
+	justify-content: center;
+	height: 400px;
+}
+.speaker__avatar{
+	/* background-image: url('../img/speakers/bg-speakers.png');
+	background-position: center;
+	background-size: contain;
+	height: 100%;
+	background-repeat: no-repeat; */
+	transform: translate(-41px ,35px);
+	height: 210px;
+	width: 232px;
+}
+.speaker__avatar img{
+	width: 100%;
+	height: 100%;
+}
+.speaker__background img{
+	max-width: 100%;
+}
+.speaker__background:hover ~ .speaker__name{
+	transform: translateY(10px);
+}
+.speaker__background{
+	position: absolute;
+	left: 0;
+	cursor: pointer;
 }
 .speaker__avatar span{
-	width: 160px;
-	height: 160px;
-	border-radius: 100%;
-	overflow: hidden;
+	/* width: 160px;
+	height: 160px; */
+	/* border-radius: 100%; */
+	/* overflow: hidden; */
 	display: inline-block;
 }
 /* NAV */
@@ -144,10 +178,13 @@ header:after{
 	margin-top: 30px;
 	margin-right: 20px;
 	display: inline-block;
-	float: right;
+	/* float: right; */
 	padding: 10px 30px;
 
 	background-color: #DF99BD;
+}
+.submit-btn__container{
+	text-align: center;
 }
 #registration-form--footer{
 	text-align: center;
@@ -174,6 +211,7 @@ header:after{
 	padding: 20px;
 	width: 100%;
 	overflow: hidden;
+	height: 300px
 }
 .hotel__name{
 	padding: 20px;
@@ -204,7 +242,7 @@ header:after{
 	margin-right: 10px;
 }
 .footer__cta{
-	margin-top: 80px;
+	margin-top: 20px;
 	font-size: 14px;
 }
 .cta__title{
@@ -278,4 +316,59 @@ header:after{
 }
 .owl-carousel .owl-nav.disabled{
 	display: none;
+}
+/* modal */
+.sync-modal .modal-dialog{
+	color: black;
+	width: 50%
+}
+.sync-modal .modal-dialog .modal-content{
+	box-shadow: none;
+	border-radius: 0;
+}
+.sync-modal .modal-dialog .modal-content .modal-footer{
+	border-top: 0;
+}
+.sync-modal .modal-dialog .modal-content .modal-header{
+	border-bottom: 0;
+}
+.sync-modal .modal-dialog .modal-content:after{
+	content:  '';
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e199bd+0,2580c1+50,0f4067+79 */
+	background: #e199bd; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e199bd 0%, #2580c1 50%, #0f4067 79%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #e199bd 0%,#2580c1 50%,#0f4067 79%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #e199bd 0%,#2580c1 50%,#0f4067 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e199bd', endColorstr='#0f4067',GradientType=1 ); /* IE6-9 */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: -1;
+}
+.modal__avatar--frame{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e199bd+0,2580c1+50,0f4067+79 */
+	background: #e199bd; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e199bd 0%, #2580c1 50%, #0f4067 79%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #e199bd 0%,#2580c1 50%,#0f4067 79%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #e199bd 0%,#2580c1 50%,#0f4067 79%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e199bd', endColorstr='#0f4067',GradientType=1 ); /* IE6-9 */
+	content: '';
+	/* z-index: -1; */
+	width: 200px;
+	height: 200px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-right: 20px; */
+}
+.modal-body{
+	padding: 30px;
+	max-width: 100%;
+}
+.modal__avatar--frame span{
+	background-color: white;
+	width: 165px;
+	height: 165px;
 }
