@@ -1,7 +1,32 @@
 function showTopics(){
 	$('#workshop-topics__list').toggleClass('active')
 }
+function prevNextDay(count){
+    var get_days = document.querySelectorAll('#rundown__day ul li');
+    var get_tab = document.querySelectorAll('#rundown__day .tab-pane');
+    var get_count = 0;
+    for(let i = 0 ; i < get_days.length; i++){
+        if(get_days[i].classList.contains('active')){
+            get_count = i+count;
+            if(get_count < 0){
+                $('.rundown-responsive.left').addClass('disabled');
+            }else{
+                if(get_count >= get_days.length){
+                    $('.rundown-responsive.right').addClass('disabled');
+                }else{
+                    get_days[i].classList.remove('active');
+                    get_tab[i].classList.remove('active');
+                    get_days[get_count].classList.add('active');
+                    get_tab[get_count].classList.add('active');
+                    $('.rundown-responsive.left').removeClass('disabled');
+                    $('.rundown-responsive.right').removeClass('disabled');
+                }
 
+            }
+            break;
+        }
+    }
+}
 $(document).ready(function(){
     $(".numeric").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
@@ -64,3 +89,4 @@ $(document).ready(function(){
 		$(this).css({'width':get_width});
 	})
 });
+

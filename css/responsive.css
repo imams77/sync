@@ -17,3 +17,87 @@
 		margin-bottom: 0;
 	}
 }
+@media (max-width: 767px){
+	.sync-form{
+		border: 0;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	.speaker__background{
+		position: relative;
+	}
+	.speakers__container{
+		height: auto;
+	}
+	.speaker__name {
+	    left: -51px;
+		bottom: 145px;
+	    font-size: 18px;
+	    position: relative;
+	}
+	.btn-xl{
+		width: 300px;
+		margin-top: 20px;
+	}
+	#hero__btn-trailer{	margin-left: 0;	}
+	#hero__btn-registration{ margin-right: 0; }
+}
+@media (max-width: 480px){
+	#rundown #rundown__day .nav li a h4{
+		font-size: 17px;
+	}
+	#rundown #rundown__day .nav li a span{
+
+	}
+}
+@media (max-width: 479px){
+	.nav-tabs-responsive{
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.nav-tabs-responsive li.active{
+		display: block;
+		width: 100%;
+	}
+	.nav-tabs-responsive li{
+		display: none;
+		text-align: center;
+	}
+	#rundown .nav-tabs-responsive li a{
+		text-align: center;
+		border-radius: 0;
+		margin: 0;
+		width: 60%;
+		margin-left: 20%;
+	}
+	.rundown-responsive{
+		background-color: #dddddd;
+		color: black;
+		width: 20%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		font-weight: 800;
+		cursor: pointer;
+		transition: all ease-in-out .2s;
+	}
+	.rundown-responsive:hover{
+		background-color: white;
+	}
+	.rundown-responsive.left{
+		left: 0;
+	}
+	.rundown-responsive.right{
+		right: 0;
+	}
+	.rundown-responsive.disabled{
+		pointer-events: none;
+	}
+	#workshop-topics__btn{
+		text-align: center;
+		width: 100%;
+	}
+}
