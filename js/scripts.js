@@ -27,6 +27,13 @@ function prevNextDay(count){
         }
     }
 }
+$(window).scroll(function(){
+    var top_scroll = $(this).scrollTop();
+    $('.parallax-asset.front').css({'transform':'translateY('+top_scroll / 30+'%)'})
+    $('.parallax-asset.mid').css({'transform':'translateY(-'+top_scroll / 45+'%)'})
+    $('.parallax-asset.back').css({'transform':'translateY(-'+top_scroll / 20+'%)'})
+    $('.parallax-asset.small').css({'transform':'translateY(-'+top_scroll / 5+'%)'})
+})
 $(document).ready(function(){
     $(".numeric").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .

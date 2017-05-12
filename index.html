@@ -392,6 +392,21 @@
     </div>
     <!-- Header -->
     <header>
+        <div class="parallax-container">
+            <div class="parallax-asset front" id="asset-front-1"></div>
+            <div class="parallax-asset front" id="asset-front-2"></div>
+            <div class="parallax-asset mid ccw" id="asset-mid-1"></div>
+            <div class="parallax-asset mid " id="asset-mid-2"></div>
+            <div class="parallax-asset mid " id="asset-mid-3"></div>
+            <div class="parallax-asset back ccw" id="asset-back-1"></div>
+            <div class="parallax-asset back" id="asset-back-2"></div>
+            <div class="parallax-asset back" id="asset-back-3"></div>
+            <div class="parallax-asset back ccw" id="asset-back-4"></div>
+            <div class="parallax-asset small ccw" id="asset-small-1"></div>
+            <div class="parallax-asset small" id="asset-small-2"></div>
+            <div class="parallax-asset small" id="asset-small-3"></div>
+            <div class="parallax-asset small" id="asset-small-4"></div>
+        </div>
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading" id="hero__top-word">
@@ -416,13 +431,18 @@
 
                         Tidak sampai disitu, setelah mengetahui potensi masing-masing kita juga akan ditantang untuk ikut dalam gerakan memuridkan dan dimuridkan yang massif untuk Indonesia.
                     </p>
-                <a href="#registration" id="hero__btn-registration" class="page-scroll btn btn-xl">REGISTRATION</a>
-                <a href="https://www.youtube.com/watch?v=c1mPogvr64I" id="hero__btn-trailer" class="popup-youtube btn btn-xl">WATCH TRAILER</a>
             </div>
         </div>
     </header>
-
+    <div class="container hero-btn__container">
+        <a href="#registration" id="hero__btn-registration" class="page-scroll btn btn-xl">REGISTRATION</a>
+        <a href="https://www.youtube.com/watch?v=c1mPogvr64I" id="hero__btn-trailer" class="popup-youtube btn btn-xl">WATCH TRAILER</a>
+    </div>
     <!-- Pembicara -->
+    <div id="middle-section">
+        <div id="middle-section-bg">
+            <img src="img/bg-middle.png" alt="">
+        </div>
     <section id="speakers">
         <div class="container">
             <div class="row">
@@ -803,7 +823,7 @@
                         <!-- <input type="submit" class="btn sync__btn" value="SEND" name="submit"> -->
                     </div>
                 </form>
-                <div id="registration-form--footer">
+                <div id="registration-form--footer" class="container">
                     <div class="subtitle" >
                         Pembayaran  dapat dilakukan ke rekening
                     </div>
@@ -814,126 +834,129 @@
             </div>
         </div>
     </section>
+    </div>
     <div class="separate-line container" data-width="50%"></div>
     <!-- PAYMENT FORM -->
-    <section id="payment">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Konfirmasi Pembayaran</h2>
+    <div id="bottom-section">
+        <section id="payment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Konfirmasi Pembayaran</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <form action="" class="sync-form" id="payment-form" method="post">
+                        <div class="row">
+                            <span class="col-sm-3 sync__label">
+                                <label for="name">NO. PESERTA *</label>
+                            </span>
+                            <span class="col-sm-9">
+                                <input type="text" name="registration-number" class="form-control">
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="col-sm-3 sync__label">
+                                <label for="name">NAMA *</label>
+                            </span>
+                            <span class="col-sm-9">
+                                <input type="text" name="name" class="form-control" placeholder="e.g : Michelle Tertia">
+                            </span>
+                        </div>
+                         <div class="row">
+                            <span class="col-sm-3 sync__label">
+                                <label for="name">NO REKENING *</label>
+                            </span>
+                            <span class="col-sm-9">
+                                <input type="text" name="account-number" class="form-control" placeholder="e.g : 0087851111">
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="col-sm-3 sync__label">
+                                <label for="name">TANGGAL TRANSFER *</label>
+                            </span>
+                            <span class="col-sm-9">
+                                <input type="text" name="transfer-date" class="form-control transfer-date" placeholder="DD/MM/YYYY">
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="col-sm-3 sync__label">
+                                <label for="name">NOMINAL *</label>
+                            </span>
+                            <span class="col-sm-9">
+                                <input type="text" name="nominal" class="form-control" placeholder="e.g : 600000">
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="col-sm-12 sync__label">
+                                <label for="name">NOTES</label>
+                            </span>
+                            <span class="col-sm-12">
+                                <textarea name="notes" class="form-control" rows="7">
+                                </textarea>
+                                <span class="sync__info">*Jika membayar untuk lebih dari 1 peserta, mohon tuliskan nama peserta di kolom ini</span>
+                            </span>
+                        </div>
+                        <div class="row submit-btn__container">
+                            <span class="btn sync__btn" data-target="#payment__modal" data-toggle="modal">SEND</span>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <form action="" class="sync-form" id="payment-form" method="post">
-                    <div class="row">
-                        <span class="col-sm-3 sync__label">
-                            <label for="name">NO. PESERTA *</label>
-                        </span>
-                        <span class="col-sm-9">
-                            <input type="text" name="registration-number" class="form-control">
-                        </span>
+        </section>
+        <div class="separate-line container" data-width="50%"></div>
+        <!-- HOTEL RECOMMENDATION -->
+        <section id="hotel">
+            <div class="container">
+                <div class="row">
+                    <div class="container text-center">
+                        <h2 style="font-size: 40px; margin-top: 0">Rekomendasi Hotel</h2>
+                        <p>Peserta SYNC Youth Conference 2017 bisa mendapatkan harga khusus menginap selama acara berlangsung di hotel pilihan kami!</p>
                     </div>
-                    <div class="row">
-                        <span class="col-sm-3 sync__label">
-                            <label for="name">NAMA *</label>
-                        </span>
-                        <span class="col-sm-9">
-                            <input type="text" name="name" class="form-control" placeholder="e.g : Michelle Tertia">
-                        </span>
-                    </div>
-                     <div class="row">
-                        <span class="col-sm-3 sync__label">
-                            <label for="name">NO REKENING *</label>
-                        </span>
-                        <span class="col-sm-9">
-                            <input type="text" name="account-number" class="form-control" placeholder="e.g : 0087851111">
-                        </span>
-                    </div>
-                    <div class="row">
-                        <span class="col-sm-3 sync__label">
-                            <label for="name">TANGGAL TRANSFER *</label>
-                        </span>
-                        <span class="col-sm-9">
-                            <input type="text" name="transfer-date" class="form-control transfer-date" placeholder="DD/MM/YYYY">
-                        </span>
-                    </div>
-                    <div class="row">
-                        <span class="col-sm-3 sync__label">
-                            <label for="name">NOMINAL *</label>
-                        </span>
-                        <span class="col-sm-9">
-                            <input type="text" name="nominal" class="form-control" placeholder="e.g : 600000">
-                        </span>
-                    </div>
-                    <div class="row">
-                        <span class="col-sm-12 sync__label">
-                            <label for="name">NOTES</label>
-                        </span>
-                        <span class="col-sm-12">
-                            <textarea name="notes" class="form-control" rows="7">
-                            </textarea>
-                            <span class="sync__info">*Jika membayar untuk lebih dari 1 peserta, mohon tuliskan nama peserta di kolom ini</span>
-                        </span>
-                    </div>
-                    <div class="row submit-btn__container">
-                        <span class="btn sync__btn" data-target="#payment__modal" data-toggle="modal">SEND</span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <div class="separate-line container" data-width="50%"></div>
-    <!-- HOTEL RECOMMENDATION -->
-    <section id="hotel">
-        <div class="container">
-            <div class="row">
-                <div class="container text-center">
-                    <h2 style="font-size: 40px; margin-top: 0">Rekomendasi Hotel</h2>
-                    <p>Peserta SYNC Youth Conference 2017 bisa mendapatkan harga khusus menginap selama acara berlangsung di hotel pilihan kami!</p>
-                </div>
-                <div class="row hotel-recommendation">
-                    <div class="col-sm-4 col-xs-6 hotel__container">
-                        <div class="hotel__inner">
-                            <div class="hotel__logo"><img src="img/hotel/newmoonlight.jpg" alt=""></div>
-                            <div class="hotel__name text-center">
-                                <h4>Newmoonlight Hotel</h4>
-                                <p>
-                                    Jl. Terusan Pasirkoja No. 144 Bandung
-                                </p>
-                                <span>(022) 63001057</span>
+                    <div class="container hotel-recommendation">
+                        <div class="col-sm-4 col-xs-6 hotel__container">
+                            <div class="hotel__inner">
+                                <div class="hotel__logo"><img src="img/hotel/newmoonlight.jpg" alt=""></div>
+                                <div class="hotel__name text-center">
+                                    <h4>Newmoonlight Hotel</h4>
+                                    <p>
+                                        Jl. Terusan Pasirkoja No. 144 Bandung
+                                    </p>
+                                    <span>(022) 63001057</span>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-sm-4 col-xs-6 hotel__container">
+                            <div class="hotel__inner">
+                                <div class="hotel__logo"><img src="img/hotel/veleza.jpg" alt=""></div>
+                                <div class="hotel__name text-center">
+                                    <h4>Veleza Hotel</h4>
+                                    <p>
+                                        Jl. Lengkong Kecil No.84, Bandung, Jawa Barat
+                                    </p>
+                                    <span>(022) 4232512 / (022) 224241670</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0 hotel__container">
+                            <div class="hotel__inner">
+                                <div class="hotel__logo"><img src="img/hotel/fave.jpg" alt=""></div>
+                                <div class="hotel__name text-center">
+                                    <h4>Favehotel Hyper Square</h4>
+                                    <p>
+                                        Jl.Paskal Hyper Square, Jl. Pasir Kaliki No. 25 – 27
+                                    </p>
+                                    <span>(022)87786333</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                   <div class="col-sm-4 col-xs-6 hotel__container">
-                        <div class="hotel__inner">
-                            <div class="hotel__logo"><img src="img/hotel/veleza.jpg" alt=""></div>
-                            <div class="hotel__name text-center">
-                                <h4>Veleza Hotel</h4>
-                                <p>
-                                    Jl. Lengkong Kecil No.84, Bandung, Jawa Barat
-                                </p>
-                                <span>(022) 4232512 / (022) 224241670</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-xs-6  hotel__container">
-                        <div class="hotel__inner">
-                            <div class="hotel__logo"><img src="img/hotel/fave.jpg" alt=""></div>
-                            <div class="hotel__name text-center">
-                                <h4>Favehotel Hyper Square</h4>
-                                <p>
-                                    Jl.Paskal Hyper Square, Jl. Pasir Kaliki No. 25 – 27
-                                </p>
-                                <span>(022)87786333</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- FOOTER-->
+        </section>
+    </div>
 
+    <!-- FOOTER-->
     <footer>
         <div class="container">
             <div class="row">

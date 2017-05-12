@@ -1,11 +1,20 @@
 body{
 	color: white;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e199bd+0,2580c1+46,0f4067+85 */
+	background: #e199bd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e199bd 0%, #2580c1 46%, #0f4067 85%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #e199bd 0%,#2580c1 46%,#0f4067 85%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #e199bd 0%,#2580c1 46%,#0f4067 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e199bd', endColorstr='#0f4067',GradientType=0 ); /* IE6-9 */
+
 }
 .btn-pink{
 	background-color: #DF99BD;
 	color: black
 }
+
+
 .hero__date-time span{
 	display: block;
 }
@@ -25,6 +34,8 @@ body{
 	margin-bottom: 50px;
 
 }
+.hero-btn__container{text-align: center}
+.hero-btn__container a{font-size: 30px;}
 #hero__btn-registration{
 	margin-right: 5px;
 }
@@ -34,16 +45,18 @@ body{
 header{
 	position: relative;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 100px;
+	z-index: 0;
 }
-header:after{
-  position: absolute;
+/* header:after{ */
+/*   position: absolute;
   height: 2px;
   width: 50%;
   left: 25%;
   background-color: white;
   content: '';
   bottom: 0;
-}
+} */
 #hero__top-word{
 	font-size: 18px;
 }
@@ -228,8 +241,41 @@ header:after{
 .hotel-recommendation{
 	margin-top: 70px;
 }
-
+#bottom-section{
+	background-image: url('../img/bg-bottom.png');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+#middle-section{
+	/* background-image: url('../img/bg-middle.png');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat; */
+	position: relative;
+	margin-top: 200px;
+}
+#middle-section-bg{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	right: 0;
+}
+#middle-section-bg img{
+	 position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: -270px;
+}
 /* footer */
+footer{
+	background-image: url('../img/footer-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
 #footer__socmed{
 	width: 100%;
 	text-align: center;
@@ -389,3 +435,52 @@ header:after{
 	width: 165px;
 	height: 165px;
 }
+/* parallax */
+.parallax-container{
+	position: absolute;
+	padding: 20px;
+	width: 130%;
+	height: 110%;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	top: -100px;
+	overflow: hidden;
+	left: -15%;
+	z-index: -1;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e199bd+0,2580c1+46,0f4067+85 */
+	background: #e199bd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e199bd 0%, #2580c1 46%, #0f4067 85%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #e199bd 0%,#2580c1 46%,#0f4067 85%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #e199bd 0%,#2580c1 46%,#0f4067 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e199bd', endColorstr='#0f4067',GradientType=0 ); /* IE6-9 */
+
+
+}
+.parallax-asset{
+	background-image: url('../img/parallax/asset1.png');
+	background-size: contain;
+	background-position: top center;
+	position: absolute;
+	background-repeat: no-repeat;
+}
+
+.parallax-asset.ccw{
+	background-image: url('../img/parallax/asset2.png');
+}
+.parallax-asset.front{ width: 400px; height: 800px; }
+.parallax-asset.mid{ width: 200px; height: 600px; }
+.parallax-asset.back{ width: 70px; height: 300px; }
+.parallax-asset.small{ width: 40px; height: 200px; }
+#asset-front-1{ left: 5%; bottom: 0px; }
+#asset-front-2{ right: 5%; bottom: 40px; }
+#asset-mid-1{ left: 16%; }
+#asset-mid-2{ left: 24%; bottom: -170px; }
+#asset-mid-3{ right: 24%; bottom: -100px; }
+#asset-back-1{ left: 31%; top: 200px;}
+#asset-back-2{ right: 30%; top: 220px; }
+#asset-back-3{ right: 18%; bottom: -119px; }
+#asset-back-4{ left: 18%; bottom: -139px; }
+#asset-small-1{ left: 36%; top: 370px; }
+#asset-small-2{ right: 36%; top: 330px; }
+#asset-small-3{ right: 20%; top: 270px; }
+#asset-small-4{ right: 31%; top: 551px; }

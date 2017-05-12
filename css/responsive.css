@@ -18,6 +18,29 @@
 	}
 }
 @media (max-width: 767px){
+	#middle-section-bg{display: none;}
+	#middle-section{margin-top: 20px;}
+	.parallax-container{
+		width: 200%;
+		left: -50%;
+	}
+	.parallax-asset.front { width: 140px; height: 390px; }
+	.parallax-asset.mid { width: 70px; height: 260px; display: none}
+	#asset-front-1{left: 20%}
+	#asset-front-2{right: 20%}
+	#asset-mid-1 { top: 20%; }
+	#asset-mid-2 { left: 26%; bottom: 250px; }
+	#asset-mid-3 { right: 14%; bottom: 300px; }
+	.parallax-asset.back{ display: none; }
+	header{
+		margin-bottom: 30px;
+	}
+	.hero-btn__container a {
+    	font-size: 25px;
+	}
+	.hero__description{
+		width: 100%;
+	}
 	.sync-form{
 		border: 0;
 		background-color: rgba(0, 0, 0, .3);
@@ -42,6 +65,26 @@
 	#hero__btn-registration{ margin-right: 0; }
 }
 @media (max-width: 480px){
+	.hero-btn__container a {
+    	font-size: 20px;
+	}
+	#middle-section{
+		margin-top: 40px;
+	}
+	.parallax-asset.front{
+		width: 200px;
+		height: 400px;
+	}
+	.parallax-asset.mid{
+		width: 100px;
+		height: 200px;
+	}
+	.parallax-container{
+		width: 200%;
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		left: -50%;
+	}
 	#rundown #rundown__day .nav li a h4{
 		font-size: 17px;
 	}
@@ -50,6 +93,7 @@
 	}
 }
 @media (max-width: 479px){
+
 	.nav-tabs-responsive{
 		margin-bottom: 20px;
 		position: relative;

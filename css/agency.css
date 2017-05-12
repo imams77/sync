@@ -6,7 +6,8 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url('../img/bg.png');
+  /* background-image: url('../img/bg.png'); */
+  background-position: center -680px;
   background-size: cover;
 }
 .text-muted {
@@ -16,11 +17,11 @@ body {
   color: #fed136;
 }
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
 }
 p.large {
-  font-size: 16px;
+  font-size: 19px;
 }
 a,
 a:hover,
